@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Guayerd Bikes">
+    <meta name="description"
+        content="Bicicletas de competición y urbanas. Somos fabricantes de las mejores bicicletas de la región. Atención personalizada y venta de accesorios.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Guayerd">
+    <meta property="og:description"
+        content="Bicicletas de competición y urbanas. Somos fabricantes de las mejores bicicletas de la región. Atención personalizada y venta de accesorios.">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Guayerd">
+    <meta property="twitter:description"
+        content="Bicicletas de competición y urbanas. Somos fabricantes de las mejores bicicletas de la región. Atención personalizada y venta de accesorios.">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+
+    <title>Contacto | Guayerd Bikes - Bicicletas de Competición y Urbanas.</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <script>
+        (function(h,e,a,t,m,p) {
+        m=e.createElement(a);m.async=!0;m.src=t;
+        p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+        })(window,document,'script','https://u.heatmap.it/log.js');
+    </script>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <div class="logo">
+                <span>GB</span>
+                <a href="index.html">
+                    <h1>GuayerdBikes</h1>
+                </a>
+            </div>
+
+            <nav>
+
+                <a href="index.html">Home</a>
+                <a href="productos.html">Productos</a>
+                <a href="ofertasPersonalizadas.html">Ofertas</a>
+                <a class="active" href="contacto.html">Contacto</a>
+            </nav>
+        </header>
+
+        <main class="main-contacto">
+            <section class="contacto">
+                <div class="titulo-contacto">
+                    <h2>Contacto</h2>
+                </div>
+                <div class="cont-contacto">
+
+                    <form action="" method="POST" novalidate>
+
+                        <label for="nombre">Nombre <span id='spanNombre' class="obligatorio">*</span></label>
+                        <input type="text" name="nombre" required maxlength="50" placeholder="Escribe tu nombre" pattern="^(\S+[\s]*)+$">
+
+                        <label for="email">Email <span id='spanEmail' class="obligatorio">*</span></label>
+                        <input type="email" name="email" required placeholder="Ingresa tu email" required pattern= "^(([a-zA-Z]|[0-9])|([-]|[_]|[.]))+[@](([a-zA-Z0-9])|([-])){2,63}[.](([a-zA-Z0-9]){2,63})+$">
+
+
+                        <label for="telefono">Teléfono <span id='spanTel' class="obligatorio"></span></label>
+                        <input type="tel" name="telefono" placeholder="Ingresa tu teléfono" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
+
+                        <label for="asunto">Asunto <span id='spanAsunto' class="obligatorio">*</span></label>
+                        <select name="asunto" required>
+                            <option value="" selected="true" hidden>Seleccione un asunto</option>
+                            <option value="Venta">Venta</option>
+                            <option value="Trabajo">Trabajo</option>
+                            <option value="Reparacion">Reparacion</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+
+                        <label for="mensaje">Mensaje <span id='spanMensaje' class="obligatorio">*</span></label>
+                        <textarea name="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
+
+                        <input type="hidden" name="grupo" value="grupo-c">
+
+                        <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>
+
+                    </form>
+                </div>
+            </section>
+
+            <section class="mapa">
+                <div class="titulo-mapa">
+                    <h2>Mapa</h2>
+                </div>
+                <div class="cont-mapa">
+                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=es&amp;q=Junin%203270,%20San%20Miguel,%20Buenos%20Aires+(GuayerdBikes)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <section class="links">
+                <a href="index.html">Home</a>
+                <a href="productos.html">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </section>
+
+            <div class="social">
+                <a href="#">FB</a>
+                <a href="#">TW</a>
+            </div>
+        </footer>
+
+    </div>
+     <!-- Aplicacion js  -->
+
+   <script type="text/javascript" src='js/request.js'></script>
+   <script type="text/javascript" src='js/validacion_form.js'></script>
+   <script type="text/javascript" src='js/codigo_descuento.js'>
+
+
+  </script>
+
+</body>
+
+</html>

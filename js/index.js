@@ -1,4 +1,5 @@
 /*  Flujo Principal de la Aplicacion*/
+// import './request.js'
 
 const LS_DESEA_GUARDAR_DATOS = "desGuarDat";
 const LS_QUIERE_RECIBIR_EMAIL = "quiereRecibirEmail";

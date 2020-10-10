@@ -1,10 +1,13 @@
 // listado de productos - Malu
+// import config from '../config.js'
+
+const config={
+  URL_BACKEND: 'http://localhost:3005'
+}
 
 function obtenerProductos() {
 
-  const URL = 'http://localhost:3005/api/productList/'
-
-  return fetch(URL)
+  return fetch(`${config.URL_BACKEND}/api/productList/`)
     .then(
       function (response) {
         return response.json()
@@ -14,7 +17,7 @@ function obtenerProductos() {
 //Funcion fetch para enviar datos del form al servidor.
 function enviarDatosForm(objDatos) {
 
-  fetch('http://localhost:3005/api/contactForm/', {
+  fetch(`${config.URL_BACKEND}/api/contactForm/`, {
     method: 'POST',
     body: JSON.stringify(objDatos),
     headers: { 'Content-Type': 'application/json' },
@@ -31,7 +34,7 @@ function enviarDatosForm(objDatos) {
 // Recupera cupones de descuento
 function descuentos(name) {
 
-  fetch('http://localhost:3005/api/discounts')
+  fetch(`${config.URL_BACKEND}/api/discounts/`)
     .then(function (response) {
 
       return response.json()
@@ -55,7 +58,7 @@ function enviarDatosServer(name, email, sendEmail, token) {
   }
 
 
-  fetch('http://localhost:3005/api/usersData/', {
+  fetch(`${config.URL_BACKEND}/api/usersData/`, {
     method: 'POST',
     body: JSON.stringify(usuario),
     headers: { 'Content-Type': 'application/json' }
@@ -70,9 +73,7 @@ function enviarDatosServer(name, email, sendEmail, token) {
 // Funcion Obtener Portada
 function obtenerPortada() {
 
-  const URL = 'http://localhost:3005/api/images/Guayerd Bikes - CyberMonday is comming!'
-
-  fetch(URL)
+  fetch(`${config.URL_BACKEND}/api/images/Guayerd Bikes - CyberMonday is comming!`)
     .then(
       function (response) {
         return response.json()

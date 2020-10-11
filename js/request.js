@@ -2,7 +2,7 @@
 // import config from '../config.js'
 
 const config={
-  URL_BACKEND: 'http://localhost:3005'
+  URL_BACKEND: 'https://guayerdstore.herokuapp.com'
 }
 
 function obtenerProductos() {
@@ -20,7 +20,7 @@ function enviarDatosForm(objDatos) {
   fetch(`${config.URL_BACKEND}/api/contactForm/`, {
     method: 'POST',
     body: JSON.stringify(objDatos),
-    headers: { 'Content-Type': 'application/json' },
+    headers: {'Content-Type': 'application/json'},
 
   }).then((res) => {
     return res.json()
